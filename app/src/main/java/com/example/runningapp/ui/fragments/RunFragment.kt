@@ -43,9 +43,7 @@ class RunFragment : Fragment(R.layout.fragment_run), EasyPermissions.PermissionC
         }
 
         spFilter.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onNothingSelected(p0: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
+            override fun onNothingSelected(adapterView: AdapterView<*>?) {}
 
             override fun onItemSelected(adapterView: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 when(position) {
